@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script>
+		function validateDate() {
+			let dob=document.getElementById("dob").value;
+			
+			let birthdate = new Date(dob); //pass the dob into the Date constrctor
+			let day = birthdate.getDate();
+			let month = birthdate.getMonth()+1;
+			let year = birthdate.getFullYear();
+			console.log('DAY   : '+day);
+			console.log('MONTH : '+month);
+			console.log('YEAR  : '+year);
+			
+			let today = new Date(); //todays date - current date
+			console.log('today     : '+today);
+			console.log('birthdate : '+birthdate);
+			
+			if(birthdate < today) {
+				console.log('its the date from the past');
+			}
+			else if( birthdate > today ){
+				console.log('its the date from the future');
+			}
+			else {
+				console.log('its todays date');
+			}
+			
+		}	
+	</script>
+
+	Enter your birthdate <input type=date id="dob"> <br>
+	<button onClick="validateDate()">Click</button>
+</body>
+</html>

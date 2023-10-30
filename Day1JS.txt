@@ -1,0 +1,119 @@
+
+
+
+			who
+			|???role->context
+		-----------------
+		|		|
+		where(space)	when(time)
+		|		|
+	-----------------------------------
+	|		|		|
+	why		what		how
+	REASON		inFORMation	implementation
+
+
+
+			Technology
+			   |
+		--------------------------
+		|	   |		|
+		Desktop	  Enterprise	Mobile
+		calc	  currency 
+			  converter
+				|
+		core	     --------------	
+		C/C++/java   |		|
+		donet	    WEB		Enterprise
+				
+		banking					DB(1)
+		|					|
+		|container<-- application server ( getBal(){}}
+		|	web container	enterprise container(2)
+		|	(3)    componentsA --componentB	
+	-----------------------------------
+(4)	|	|	|	|	|
+	HTTP	<------non-http request---> <== networked request
+	PC	ATM	Visa	Mobile	sms
+	|	|	|	|	?	
+	bal?	bal?	bal?	bal?	bal-text/hear(mp3)
+	chrome	app
+	IE
+	firefox
+	|
+	home
+	|
+	login
+	|
+	dashboard
+	|
+	see balance <--click this button
+
+
+		Where the java script fits here?
+
+
+http://icicibank.com
+
+Enterprise application features
+----------------------------------
+1. Remotely available
+2. highly available
+3. multithreading
+4. pooling of resources
+5. caching of resources
+6. transaction management
+7. security management
+
+
+
+
+
+
+
+			Server
+			|
+			|
+		-------------
+		|
+		|
+		Client <-- javascript runs on the browser
+		|	and it can control the UI/style
+		|	and other javascript code
+		|
+		html file<-- to present the VIEW
+	home.html
+		home.css 
+			home.js
+	html	css	javascript
+	|	|	|
+	view	style   validation
+	hair	style	/automation
+			 code
+			
+
+		BankingProject
+			|
+		--------------------
+		|		|
+		WEB		Enterprise
+		html/css/js		c++/java/dotnet 
+					THE MAIN BUSINESS 
+					OF THE CLIENT
+			|
+			|
+		---------------
+		|
+		client
+	http://ipaddress/port/BankingProject
+		[ www.icicibank.com ]
+
+1. Developer
+2. Tester
+3. Deployer
+4. Client
+
+
+
+
+

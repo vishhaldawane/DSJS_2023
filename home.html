@@ -1,0 +1,45 @@
+
+<html>
+	<head>
+		<link rel="stylesheet" href="home.css">	
+	</head>
+
+	<body>
+		<script>
+			function checkLogin()
+			{
+				alert('hello internal javascript');
+			}
+			function checkUsername() {
+				var uname = document.getElementById('username').value;
+				var expr = /^[a-zA-Z0-9_]{4,8}$/;
+
+		//[a-z][a-z][a-z][a-z][a-z][0-9][0-9][0-9][0-9][a-z]  
+
+				if (!expr.test(uname)) {
+					document.getElementById('usernameErr').innerHTML='Only Alphabets, Numbers and underscore between 4 to 8';
+				}
+
+				/*if(uname.length > 8 ) {
+					document.getElementById('usernameErr').innerHTML='Username cannot exceed 8 letters';
+				}*/
+				else {
+				  document.getElementById('usernameErr').innerHTML='';
+				}
+				console.log('checking username : '+uname);
+			}
+			function checkPassword() {
+				var upass= document.getElementById('password').value;
+				console.log('checking password : '+upass);
+			}
+		</script>
+		<h1> Welcome to Dassault Systems </h1>
+	Enter username <input type=text id="username" 
+			onKeyUp="checkUsername()"><span style="color:red" id="usernameErr"></span><br>
+	Enter password <input type=password id="password" 
+			onKeyUp="checkPassword()"><br>
+	<button onClick="checkLogin()"> Login Here </button>
+
+	</body>
+</html>
+

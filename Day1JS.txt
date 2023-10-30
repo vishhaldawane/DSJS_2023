@@ -1,5 +1,7 @@
 
 
+https://github.com/vishhaldawane/DSJS_2023
+
 
 			who
 			|???role->context
@@ -112,6 +114,108 @@ Enterprise application features
 2. Tester
 3. Deployer
 4. Client
+
+
+
+
+----------------------------------
+
+
+
+
+Autobiography of a Yogi = top 100 
+1952
+
+thoughts
+----------
+	visible ? --  NO
+
+	faster than light
+
+	non-linear
+	
+	uncontrolled - never ending
+
+	i am holding a glass of water
+	|		|	|	
+	1		2	3
+	i am having a mind  of thoughts
+	|
+
+
+
+
+mind - thoughtrons - lifetrons
+
+
+
+
+
+
+
+
+
+formula of creation
+---------------------	
+	invisible			visible
+	|				|
+thought	 +	feeling		action	-> result/output
+				to 
+				type 
+				the code
+
+
+date.html
+---------
+<script>
+var l_dob =  document.getElementById("dob").value;
+console.log('birthdate is '+l_dob)
+</script>
+
+Enter birthdate
+<input type=date id="dob">
+---------------
+
+
+1. registration.html 
+	backed by registration.css <-- decorate it
+   registration.js
+	with validator functions
+
+	Sign Up Here
+	---------
+	Enter username  : <- cannot be blank
+			    must be upto 8 letters
+	Enter password  : <-- cannot be blank
+	ReEnter password: <-- must be same as the earlier 
+				password entered above
+	Enter email  : <-- a valid email - use regular
+				expression
+	Enter dob :	valid past birthdate
+
+	Enter address : text area <-- cannot be blank
+
+	SUBMIT
+
+	var str = document..getlee.e..
+
+	if ( str1=="")
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
 
 
 

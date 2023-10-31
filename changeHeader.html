@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+	<script>
+//	class Emp{empno,ename,sal},  Emp e = new Emp();,  e.empno=90,  e.ename="john", e.sal=900;
+	
+	
+	
+myemp1 = { employeeNumber:101,employeeName:"John",employeeSalary:5000,
+			isMarried:true,
+			isCertified:false,
+			isSalaried:false,
+		}
+
+		document.write(myemp1.employeeNumber+'<>');
+		document.write(myemp1.employeeName+ '<>');
+		document.write(myemp1.employeeSalary);
+		document.write(myemp1.isMarried);
+		document.write(myemp1.isCertified);
+		document.write(myemp1.isSalaried);
+		
+
+		
+	function showEmp() {
+		let str=myemp1.employeeNumber+'<>'+myemp1.employeeName+ '<>'+myemp1.employeeSalary;		
+		document.getElementById("myheader").innerHTML=str;
+	}
+	</script>
+<body>
+
+<h1 id="myheader" onclick="showEmp()"> click here to see the employee </h1>
+	<br>
+	Employee Number : <span id="empno">HERE</span> <br>
+	Employee Name   : <span id="empname">HERE</span> <br>
+	Employee Salary : <span id="empsal">HERE</span> <br>
+	<button onclick="showEmp()">Show Employee</button>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		var bankObj = { };
+		
+		document.write('bankObj : ',bankObj);
+		
+		bankObj.accountNumber=101;
+		bankObj.accountHolder="Janet";
+		bankObj.accountBalance=50000;
+		
+		document.write('accountNumber  : ',bankObj.accountNumber);
+		document.write(' accountHolder  : ',bankObj.accountHolder);
+		document.write(' accountBalance : ',bankObj.accountBalance);
+
+		var books=
+		[
+			{bookNumber:101, bookName:'C++ Primer', bookCost:560},
+			{bookNumber:102, bookName:'C Programming', bookCost:360},
+			{bookNumber:103, bookName:'Java Programming', bookCost:860},
+			{bookNumber:104, bookName:'Java Script Tutorials', bookCost:460}
+		];
+		
+		document.write('<table border=5 cellpadding=10 cellspacing=10>');
+
+		for(i=0;i<books.length;i++) {
+			document.write('<tr>');
+			
+			document.write('<td>Book Number</td> <td>'+books[i].bookNumber+'</td>');
+			document.write('<td>Book Name</td>   <td>',books[i].bookName+'</td>');
+			document.write('<td>Book Price </td> <td>',books[i].bookCost+'</td>');
+			document.write('</tr>');
+
+		}
+		
+		document.write('</table>');
+
+	</script>
+	
+	<h1> hello </h1>
+	
+</body>
+</html>

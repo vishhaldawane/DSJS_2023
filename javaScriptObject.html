@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+	<script>
+//	class Emp{empno,ename,sal},  Emp e = new Emp();,  e.empno=90,  e.ename="john", e.sal=900;
+	
+	
+	
+myemp1 = { employeeNumber:101,employeeName:"John",employeeSalary:5000 }
+
+		document.write(myemp1.employeeNumber+'<>');
+		document.write(myemp1.employeeName+ '<>');
+		document.write(myemp1.employeeSalary);	
+		
+	function showEmp() {
+		document.getElementById("empno").innerHTML=myemp1.employeeNumber;
+		document.getElementById("empname").innerHTML=myemp1.employeeName;
+		document.getElementById("empsal").innerHTML=myemp1.employeeSalary;
+	}
+	</script>
+<body>
+	<br>
+	Employee Number : <span id="empno">HERE</span> <br>
+	Employee Name   : <span id="empname">HERE</span> <br>
+	Employee Salary : <span id="empsal">HERE</span> <br>
+	<button onclick="showEmp()">Show Employee</button>
+</body>
+</html>

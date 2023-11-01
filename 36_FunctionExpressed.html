@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>Before the script...</p>
+
+  <script>
+	'use strict';
+	let age = prompt("What is your age?", 18);
+
+	let welcome;
+	if (age < 18) {	welcome = function() { alert("Hello!"); };  } 
+	else {	welcome = function() { alert("Greetings!"); };      }
+
+	welcome(); // ok now
+
+	let age1 = prompt("What is your age?", 18); 
+
+	let greet = (age1 < 18) ?
+ 		function() { alert("Hello!How are you"); } 
+			:
+		function() { alert("Greetings!for the day"); };
+
+		//x = (5 > 40) ? 100 : 200;
+		
+	greet(); // ok now
+	
+  </script>
+
+  <p>...After the script.</p>
+
+</body>
+			
+</html>

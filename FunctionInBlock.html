@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+	'use strict';
+	
+	let age=16; 
+	
+	let welcome;
+	
+	if( age < 18 ) {
+		window.a=90;
+		//welcome('jack');
+		welcome = function (to) {
+			alert('Hello : '+to);
+			alert('if : value : '+window.a);
+		}
+		welcome('John');
+	}
+	else {
+		//welcome('Reeta');
+		welcome = function (to) {
+			alert('Greeting : '+to);
+			alert('else : value : '+window.a);
+
+		}
+		welcome('Seeta');
+	}
+	
+	welcome('HOWS LIFE'+window.a);
+	</script>
+</body>
+</html>

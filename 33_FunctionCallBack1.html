@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>Before the script...</p>
+  <script>
+	function ask(question, yes, no) {
+	  if (confirm(question)) yes(); else no();
+	}
+	ask("Do you agree?",   
+		function () { alert("You agreed."); },
+		function () { alert("You canceled the execution."); }
+	); //invoking it
+	
+	ask("Are you sure?", 
+		function() { alert("You Passed"); },
+		function() { alert("You stopped.."); }
+	);
+
+	sayHi("John"); // Hello, John //known as a global defn 
+	function sayHi(name) {  alert( `Hello, ${name}` );	}
+	sayHi("Jane"); // Hello, Jane //known as a global defn 		
+
+	sayHi1("how are you1"); // error!  // not known until it reach = line	
+
+	let sayHi1 = function(name) { alert( `Hello, ${name}` );} ;
+	sayHi1("how are you2"); 
+
+/*A function is a value representing an �action�
+	-Regular values like strings or numbers represent the data.
+	-A function can be perceived as an action.
+	-We can pass it between variables and run when we want.
+	*/
+
+  </script>
+
+  <p>...After the script.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>Before the script...</p>
+
+  <script>
+	let a = 100; console.log('1 script: a ',a);
+	let b= 200;
+  	console.log('2 script: a ',a);
+	console.log('3 script: b ',b);
+	
+//	var b = 200; console.log('6 script: b ',b);  
+	function fun() {
+		var  x=90;
+		console.log('fun: z ',z);//90
+		
+		let z = 88;
+		console.log('fun: a ',a);//100
+		console.log('fun: x ',x);//90
+		console.log('fun: z ',z);//90
+
+		x=80;//but we r not printing	
+	}
+	function foo() {
+		var x=190;
+		console.log('foo: a ',a);//100
+		console.log('foo: x ',x);//190
+		x=290;
+	}
+	fun();foo(); fun();foo();	
+  </script>
+  
+  <script>
+  		console.log('another script a : ',a);
+  		console.log('another script b : ',b);
+	//	console.log('var of   fun: x ',x);//90
+	//	console.log('let z of fun: z ',z);//90
+
+  		a=111;
+  		console.log('another script ',a);
+  </script>
+
+  <p>...After the script.</p>
+
+</body>
+
+</html>

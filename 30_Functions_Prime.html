@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+  <p>Before the script...</p>
+  <script>
+	function showPrimes(n) {//range wise  100
+	  for (let i = 2; i < n; i++) {	//2..100
+		  
+	    if ( ! isPrime(i)) //2 
+	    	continue; //iterative call	
+	    	alert(i);  // a prime
+	    }
+	}
+	//7  2 3 4 5 6 
+	function isPrime(num) { //core logic to test prime
+	  for (let i = 2; i < num; i++) {	    if ( num % i == 0) return false;}
+	 return true;
+	}
+	
+	showPrimes(100); // 2 3 5 7 11 13 17 ..... 
+	let num = prompt('Enter a number'); //100
+	//and show it ifs prime or not
+	if ( isPrime(num) ) {   alert('its a prime number');
+	}else { alert('its a not a prime number');}
+
+	
+	//armstrong number = 371 = cube of 3 + cube of 7 + cube of 1
+	// 27 + 343 + 1 = 371
+
+  </script>
+
+  <p>...After the script.</p>
+
+</body>
+
+</html>

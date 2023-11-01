@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+	<script>
+	
+		function add(i,j)
+	    {
+	            return i+j;
+	    }
+	    let sum = add; //sum is a new name to an existing function known as add
+	    
+	    alert(add);    alert(sum);
+	
+	    let p = sum(10,20);
+	    
+	    alert('p is '+p);
+	    
+	    let avg = function (p,q,r) {
+	    	return (p+q+r)/3;	
+	    } // <-- semicolon is required as the completion of the let statement.
+
+	    alert(avg(10,20,30));
+	    
+	    
+	    let average = avg;
+	    
+	    alert(average(50,60,70));
+	    
+	    let prod =  (x,y) => x*y;
+	    
+	    let p = () => 100;
+	    
+	    
+	    
+	    alert(prod(2,3));
+	    
+	    
+	</script>
+</body>
+</html>

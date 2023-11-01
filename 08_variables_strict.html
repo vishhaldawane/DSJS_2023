@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>Before the script...</p>
+
+  <script>
+	'use strict';
+	
+	let global=500;
+	
+	function fun() {
+		num=3;
+		alert('>>inside function : num    :'+ num); // 5
+		num = 5; // the variable "num" is created if it didn't exist
+		alert('>>inside function : global :'+ global); // 5
+		alert('>>inside function : num    :'+ num); // 5
+		global=700;
+		alert('>>inside function : global :'+ global); // 5
+	}
+	
+	
+	//let global=700;
+	fun(); //invoked here
+	alert('outside function :   global :'+ global); // 5
+	alert('outside function :   num '+num);
+  
+</script>
+
+  <p>...After the script.</p>
+
+</body>
+
+</html>

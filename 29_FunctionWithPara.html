@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+  <p>Before the script...</p>
+  <script>
+	function showMessage( from,  text) {
+	  from = '*' + from + '*';  alert( from + ': ' + text );
+	}
+	let from = "Anna"; showMessage(from, "Hello"); // *Anna*: Hello
+//------------------------------------------------------------------------	
+	// the value of "from" is the same, the function modified a local copy
+	alert( from ); // Anna
+	function showMessage1(from, text = "no text given") {
+	  alert( from + ": " + text );
+	}	
+	let text="overridden line, SOME TEXT IS GIVEN";
+	showMessage1("Anna",text); // Ann: overridden line SOME TEXT IS GIVE
+	showMessage1("Jack");
+	showMessage1("Smith","This is a new line");
+//------------------------------------------------------------------------		
+	function anotherFunction() {return 'End User';}
+	function showMessage2(from, text = anotherFunction()) {
+	  alert(from + ":" + text);
+	}
+	showMessage2("Vishhal");	showMessage2("Ganesh","Admin User");
+
+	
+  </script>
+
+  <p>...After the script.</p>
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
